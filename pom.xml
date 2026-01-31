@@ -13,19 +13,17 @@
     <name>OffRoad Backend</name>
     <description>Group Ride Connectivity Platform</description>
 
-    <!-- ✅ Spring Boot 3.x requires Java 17+, we use Java 21 (LTS) -->
-    <properties>
-        <java.version>21</java.version>
-        <spring-boot.version>3.3.2</spring-boot.version>
-    </properties>
-
-    <!-- ✅ Spring Boot Parent -->
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>${spring-boot.version}</version>
+        <version>3.3.2</version>
         <relativePath/>
     </parent>
+
+    <properties>
+        <java.version>21</java.version>
+    </properties>
+
 
     <dependencies>
 
@@ -96,6 +94,19 @@
             <artifactId>jjwt-jackson</artifactId>
             <version>0.12.5</version>
             <scope>runtime</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.mapstruct</groupId>
+            <artifactId>mapstruct</artifactId>
+            <version>1.5.5.Final</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.mapstruct</groupId>
+            <artifactId>mapstruct-processor</artifactId>
+            <version>1.5.5.Final</version>
+            <scope>provided</scope>
         </dependency>
 
         <!-- ================= DOCUMENTATION ================= -->

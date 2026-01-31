@@ -1,9 +1,12 @@
 package com.project.offroad.domain.entity;
 
 import com.project.offroad.domain.base.BaseEntity;
+import com.project.offroad.domain.enumtype.RideStatus;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
+
+import java.time.OffsetDateTime;
 
 @Getter
 @Setter

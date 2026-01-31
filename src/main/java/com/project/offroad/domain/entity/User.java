@@ -1,6 +1,7 @@
 package com.project.offroad.domain.entity;
 
 import com.project.offroad.domain.base.BaseEntity;
+import com.project.offroad.domain.enumtype.Role;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
